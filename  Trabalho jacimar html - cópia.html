@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portfólio de Carros</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+            scroll-behavior: smooth;
+            padding-bottom: 150px; 
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(0,0,0,0.3);
+            backdrop-filter: blur(0px);
+            transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+            z-index: 1000;
+        }
+
+        body:has(nav:target), body:has(:target) nav {
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-top: 100px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            font-size: 40px;
+            margin: 40px 0 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 15px 40px;
+            text-align: justify;
+        }
+
+        .mustang {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Rodapé */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            color: white;
+            font-size: 16px;
+            z-index: 1000;
+        }
+
+        footer a {
+            color: #ff4b2b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#mustang">Mustang</a>
+        <a href="#camaro">Camaro</a>
+        <a href="#porsche">Porsche 911</a>
+        <a href="#historia-empresa">História da Empresa</a>
+        <a href="#sobre">Sobre o Site</a>
+        <a href="https://pt.wikipedia.org/wiki/Ford" target="_blank">Empresas Parceiras</a>
+    </nav>
+
+    <!-- Título -->
+    <h1>Bem-vindo ao meu portfólio de carros!</h1>
+    <img src="index / Mustang.png" width="600" alt="Mustang 2020">
+
+    <!-- Mustang -->
+    <section id="mustang">
+        <p>
+            A criação do Ford <span class="mustang">Mustang</span>, em 1964, foi uma jogada da Ford para conquistar o público jovem com um carro de design esportivo, desempenho potente e preço acessível. 
+            A seguir estão um pouco de cada geração do <span class="mustang">Mustang</span>.
+        </p>
+
+        <h2>1. Primeira Geração (1964-1973)</h2>
+        <p>O Início do Ícone: Lançado em 1964, o <span class="mustang">Mustang</span> foi o carro que deu origem à categoria dos "pony cars", um sucesso imediato. Evolução: O modelo de 1968 introduziu aprimoramentos de segurança e um motor V8 maior. Nos anos 1971-73, a Ford aumentou o tamanho e peso do carro, o que resultou em uma descaracterização do conceito original.</p>
+
+        <h2>2. Segunda Geração (1974-1978)</h2>
+        <p>Adaptação à Crise do Petróleo: O <span class="mustang">Mustang</span> tornou-se mais compacto para se adaptar à crise do petróleo, com o modelo "Mustang 2" sendo mais pequeno e eficiente.</p>
+
+        <h2>3. Terceira Geração (1979-1993)</h2>
+        <p>O "Fox Body": Esta geração, apelidada de "Fox Body", destacou-se por uma carroceria leve, sendo bastante apreciada por entusiastas de arrancada.</p>
+
+        <h2>4. Quarta Geração (1994-2004)</h2>
+        <p>Identificação: Conhecida como SN95, esta geração continuou a desenvolver o design e a tecnologia do Mustang.</p>
+
+        <h2>5. Quinta Geração (2005-2014)</h2>
+        <p>Estilo "Retro": O modelo "S197" foi caracterizado por um design retrô, resgatando elementos do passado para criar um visual moderno.</p>
+
+        <h2>6. Sexta Geração (2014-2023)</h2>
+        <p>Globalização e Tecnologia: O lançamento global do <span class="mustang">Mustang</span> exigiu a adoção de suspensão independente e um alto nível de tecnologia e conectividade. Mach 1: A adição de componentes da linha Shelby ao modelo, como o coletor de admissão e o refrigerador de óleo, resultou no modelo Mach 1 em 2021.</p>
+
+        <h2>7. Sétima Geração (2024-Presente)</h2>
+        <p>Design Agressivo e Tecnologia Avançada: A geração atual (S650) apresenta um visual mais agressivo, um interior com painel digital, e um sistema de entretenimento com tela sensível ao toque.</p>
+
+        <h2>8. O Mustang SUV Elétrico</h2>
+        <p>Complemento à Família: O Ford Mustang Mach-E, lançado em 2020, expandiu a família Mustang ao incorporar o conceito de SUV elétrico, mantendo a performance, mas sem substituir o Mustang tradicional.</p>
+    </section>
+
+    <!-- Camaro -->
+    <section id="camaro">
+        <h1>História do Chevrolet Camaro</h1>
+        <p>
+            O Chevrolet Camaro foi lançado em 1966 como resposta direta ao sucesso do Ford Mustang. Desde sua primeira geração, o Camaro conquistou os fãs de carros esportivos com seu design agressivo e motores potentes. 
+            O Camaro se tornou um verdadeiro ícone americano, presente nas pistas de corrida e nas ruas, representando performance e estilo.
+        </p>
+    </section>
+
+    <!-- Porsche -->
+    <section id="porsche">
+        <h1>O clássico Porsche 911</h1>
+        <p>Lançado em 1963, o Porsche 911 é um símbolo de engenharia e design alemão, reconhecido mundialmente pela sua performance, elegância e inovação contínua ao longo das décadas.</p>
+    </section>
+
+    <!-- História da Empresa -->
+    <section id="historia-empresa">
+        <h1>História da Ford</h1>
+        <img src="index /Ford T.png" alt="O Ford modelo T, carro que simboliza o nascimento da era do automóvel, comemorou 110 anos de lançamento nesse primeiro de outubro. Não foi o primeiro carro do mundo, isso todos sabemos, mas sim o carro que “deu rodas ao mundo”, pela sua grande produção e preço que o tornou acessível a muita gente." width="600">
+            <p>
+            A Ford foi fundada em 1903 por Henry Ford, revolucionando a indústria automobilística com a introdução da linha de montagem em 1913. 
+            Esse método permitiu produzir veículos em massa, tornando o automóvel acessível para milhões de pessoas. 
+            O Modelo T foi seu maior marco, transformando a mobilidade no século XX e estabelecendo a Ford como uma das maiores montadoras do mundo.
+        </p>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h1>Sobre o Site</h1>
+        <p>Esse site foi criado com intuito de mostrar um pouco da história do Ford <span class="mustang">Mustang</span> e de outros carros icônicos, ele foi desenvolvido por <span style="color:black;">Matheus Steiner Milleto</span> para pessoas que gostam de carros.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <a href="mailto:suporte@meusite.com">Suporte</a>
+        <a href="#sobre">Sobre o Site</a>
+        <a href="https://pt.wikipedia.org/wiki/Ford" target="_blank">Empresas Parceiras</a>
+    </footer>
+
+</body>
+</html>
